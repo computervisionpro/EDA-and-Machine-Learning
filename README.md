@@ -72,7 +72,7 @@ Before doing iteration 4, I dropped X38, X12 due to high p_value also X32 due to
 
 We will neglect first two, as they had insignificant and high VIF features and take model of Iteration 3 for further consideration, as it had better f1-score and no high VIF and p-value features and also uses lesser features i.e. 35.
 
-<img width="300" alt="iteration-3" src="https://user-images.githubusercontent.com/40919247/123507674-48c99980-d688-11eb-8c77-b5425447d6c5.png">
+<img width="500" alt="iteration-3" src="https://user-images.githubusercontent.com/40919247/123507674-48c99980-d688-11eb-8c77-b5425447d6c5.png">
 
 
 For KNN, it was found f1-score was 0.90 i.e lesser than Logisitc regression, hence we will stick with the Logistic model of iteration 3.
@@ -82,7 +82,7 @@ For KNN, it was found f1-score was 0.90 i.e lesser than Logisitc regression, hen
 
 We applied GridSearchCV to get the best hyper-parameters for the model obtained from Iteration 3. Follwing are the best hyper-parameters:
 
-<img width="357" alt="grid-search" src="https://user-images.githubusercontent.com/40919247/123507822-4287ed00-d689-11eb-8acf-0d5777e0d551.png">
+<img width="457" alt="grid-search" src="https://user-images.githubusercontent.com/40919247/123507822-4287ed00-d689-11eb-8acf-0d5777e0d551.png">
 
 
 
