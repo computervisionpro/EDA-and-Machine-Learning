@@ -30,7 +30,7 @@ The notebook contains 5 major sections:
 
 ## Data preprocessing and EDA
 
-In this step, I have first eliminated the first column with serial numbers, after reading the training data. Then used `df.shape` to check the dimensions. The `df.describe()` showed the range for all features are different, for example max value of `X1` is 4.34 but for `X57` its more than 10K. Hence, I have used scaling. There were no null values present and all of the features were numerical, hence no encoding was required. A class imbalance was found using `df['Y'].value_counts()` method, 
+In this step, I have first eliminated the first column with serial numbers, after reading the training data. Then used `df.shape` to check the dimensions. The `df.describe()` showed the range for all features are different, for example max value of `X1` is 4.34 but for `X57` its more than 10K. Hence, scaling will be used later. There were no null values present and all of the features were numerical, hence no encoding was required. A class imbalance was found using `df['Y'].value_counts()` method, 
 
 
 <img width="150" alt="class_imbalance" src="https://user-images.githubusercontent.com/40919247/123508759-f63fab80-d68e-11eb-8a3a-6e50d9fa21ee.png">
@@ -41,7 +41,7 @@ There are many methods to tackle class imbalance like collecting more data, dupl
 `weight = total_samples / (n_classes * class_samples)`
 
 
-On checking linear correlation between different features, it was found that features `X32` and `X34` were highly correlated with each other. Also, few features like in the middle region also seem to be correlated with each other to certain extent.
+On checking linear correlation between different features, it was found that features `X32` and `X34` were highly correlated with each other. Also, few features like in the middle region also seem to be correlated with each other to certain extent, as shown below.
 
 <img width="391" alt="corr" src="https://user-images.githubusercontent.com/40919247/123506231-c38eb680-d680-11eb-8dfc-fd2a250d6dc4.png">
 
@@ -51,8 +51,13 @@ I tried removing outliers using `IQR` technique, but it did not work for the dat
 
 ## Feature Engineering
 
-In this first step I did was calculate Variance Inflation Factor of all the features. From this, I found that features `X32` and `X34` had a very high VIF, which strengthens our previous claim in EDA step. Hence, we will be removing one of them while and checking the VIF again and repeat till there are no features with VIF > 5. I divided the data in train and validation part, where I reserved 20 % of total training data for validation.
-I also scaled the data, as mentioned in the EDA step. After that we use ANOVA using `f_classif` function to get p-values. Here, `X38` & `X12` have p-values > 0.05, so that should be removed.
+In this first step I did was calculate Variance Inflation Factor of all the features. From this, I found that features `X32` and `X34` had a very high VIF, which strengthens our previous claim in EDA step. Hence, we will be removing one of them while and checking the VIF again and repeat till there are no features with VIF > 5. 
+Below image shows the two said features with a high VIF:
+
+<img width="124" alt="vif" src="https://user-images.githubusercontent.com/40919247/123508998-9b0eb880-d690-11eb-86e6-9080b37e35c6.png">
+
+
+I divided the data in train and validation part, where I reserved 20 % of total training data for validation. I also scaled the data, as mentioned in the EDA step. After that we use ANOVA using `f_classif` function to get p-values. Here, `X38` & `X12` have p-values > 0.05, so that should be removed.
 
 Then I used `SelectKBest()` function to get first 35 most significant features, to be used for modeling (by trial and error). Those feature were:
 
