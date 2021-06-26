@@ -16,6 +16,7 @@ Libraries used and their versions:
 5. Statsmodels=0.12.0
 6. Scikit-Learn=0.23.2
 
+-------
 
 The notebook contains 5 major sections:
 1. Data preprocessing and EDA
@@ -39,4 +40,8 @@ There are many methods to tackle class imbalance like collecting more data, dupl
 
 
 On checking linear correlation between different features, it was found that features X32 and X34 were highly correlated with each other. Also, few features like in the middle region also seem to be correlated with each other to certain extent.
+
+<img width="391" alt="corr" src="https://user-images.githubusercontent.com/40919247/123506231-c38eb680-d680-11eb-8dfc-fd2a250d6dc4.png">
+
+I tried removing outliers using `IQR` technique, but it did not work for the data set.
 
