@@ -88,6 +88,8 @@ Before doing iteration 4, I dropped `X38`, `X12` due to high p_value & also `X32
 
 We will neglect first two, as they had insignificant and high VIF features and take model of Iteration 3 for further consideration, as it had better f1-score and no high VIF and p-value features and it also uses lesser number of features i.e. 35.
 
+Below image shows results for iteration 3.
+
 <img width="500" alt="iteration-3" src="https://user-images.githubusercontent.com/40919247/123507674-48c99980-d688-11eb-8c77-b5425447d6c5.png">
 
 
