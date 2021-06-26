@@ -4,6 +4,8 @@
 
 This notebook models a given data set using the classification technique. It also uses various preprocessing & Exploratory data analysis steps.
 
+<img width="631" alt="read-train" src="https://user-images.githubusercontent.com/40919247/123508647-436f4d80-d68e-11eb-9210-408019d3b6a0.png">
+
 
 # Requirements
 
@@ -28,7 +30,7 @@ The notebook contains 5 major sections:
 
 ## Data preprocessing and EDA
 
-In this step, I have first eliminated the first column with serial numbers. Then used `df.shape` to check the dimensions. The `df.describe()` showed the range for all features are different, for example max value of `X1` is 4.34 but for `X57` its more than 10K. Hence, I have used scaling. There were no null values present and all of the features were numerical, hence no encoding was required. A class imbalance was found using df['Y'].value_counts() method, 
+In this step, I have first eliminated the first column with serial numbers, after reading the train. Then used `df.shape` to check the dimensions. The `df.describe()` showed the range for all features are different, for example max value of `X1` is 4.34 but for `X57` its more than 10K. Hence, I have used scaling. There were no null values present and all of the features were numerical, hence no encoding was required. A class imbalance was found using df['Y'].value_counts() method, 
 
 
 <img width="307" alt="class_imbalance" src="https://user-images.githubusercontent.com/40919247/123505679-17e46700-d67e-11eb-896a-7a6985244107.png">
