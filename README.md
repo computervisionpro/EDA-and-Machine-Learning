@@ -11,12 +11,12 @@ This notebook models a given data set using the classification technique. It als
 
 Libraries used and their versions:
 
-1. Numpy=1.19.2
-2. Pandas=1.1.3
-3. Matplotlib=3.3.2
-4. Seaborn=0.11.0
-5. Statsmodels=0.12.0
-6. Scikit-Learn=0.23.2
+1. Numpy==1.19.2
+2. Pandas==1.1.3
+3. Matplotlib==3.3.2
+4. Seaborn==0.11.0
+5. Statsmodels==0.12.0
+6. Scikit-Learn==0.23.2
 
 -------
 
