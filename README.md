@@ -93,7 +93,7 @@ The training accuracy score is 0.924 as seen above.
 
 ## Final model performance using best hyperparameters
 
-Finally we will check performance of the above model with above model. 
+Finally we will check performance of the above model: 
 
 <img width="473" alt="final-score" src="https://user-images.githubusercontent.com/40919247/123508124-0f465d80-d68b-11eb-9a57-8d2930fd05d3.png">
 
@@ -104,11 +104,6 @@ It can be seen the Final Validation f1-score is now 0.92
 ## Prediction of test data
 
 
-To test, I first read the csv file, did some checks to see if it has any null values. Then I scaled 
-
-
-
-
-
+To test, I first read the csv file, did some checks to see if it has any null values. Then I scaled the test data, selected those 35 features that I considered while training and predicted the outcome with our final model. Then I appended the prediction with test file and saved it as `test_set_prediction.csv` 
 
 
