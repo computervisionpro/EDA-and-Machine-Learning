@@ -117,6 +117,6 @@ It can be seen the Final Validation f1-score is now 0.92, which is better than 0
 ## Prediction of test data
 
 
-To test, I first read the csv file, did some checks to see if it has any null values. Then I scaled the test data, selected those 35 features that I considered while training and predicted the outcome with our final model. Then I appended the prediction with test file and saved it as `test_set_prediction.csv` 
+For prediction, I first read the csv file, did some checks to see if it has any null values. Then I scaled the test data, selected those 35 features that I considered while training and predicted the outcome with our final model. Then I appended the prediction with test file and saved it as `test_set_prediction.csv` 
 
 
