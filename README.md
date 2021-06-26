@@ -98,7 +98,7 @@ For KNN, it was found f1-score was 0.90 i.e lesser than Logisitc regression, hen
 
 ### GridSearchCV
 
-We applied GridSearchCV to get the best hyper-parameters for the model obtained from Iteration 3. Follwing are the best hyper-parameters:
+I used `GridSearchCV` to get the best hyper-parameters for the model obtained from Iteration 3. Follwing are the best hyper-parameters:
 
 <img width="457" alt="grid-search" src="https://user-images.githubusercontent.com/40919247/123507822-4287ed00-d689-11eb-8acf-0d5777e0d551.png">
 
@@ -110,7 +110,7 @@ Finally we will check performance of the above model:
 
 <img width="473" alt="final-score" src="https://user-images.githubusercontent.com/40919247/123508124-0f465d80-d68b-11eb-9a57-8d2930fd05d3.png">
 
-It can be seen the Final Validation f1-score is now 0.92
+It can be seen the Final Validation f1-score is now 0.92, which is better than 0.91
 
 
 
