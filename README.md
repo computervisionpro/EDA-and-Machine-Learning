@@ -56,6 +56,11 @@ I also scaled the data, as mentioned in the EDA step. After that we use ANOVA us
 
 Then I used `SelectKBest()` function to get first 35 most significant features, to be used for modeling (by trial and error). Those feature were:
 
+`['X1', 'X3', 'X5', 'X6', 'X7', 'X8', 'X9', 'X10', 'X11', 'X15', 'X16',
+       'X17', 'X18', 'X19', 'X20', 'X21', 'X23', 'X24', 'X25', 'X26', 'X27',
+       'X28', 'X29', 'X30', 'X35', 'X36', 'X37', 'X42', 'X43', 'X45', 'X46',
+       'X52', 'X53', 'X56', 'X57']`
+
 
 
 ## Model Building
