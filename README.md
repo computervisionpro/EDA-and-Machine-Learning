@@ -33,7 +33,7 @@ The notebook contains 5 major sections:
 In this step, I have first eliminated the first column with serial numbers, after reading the train. Then used `df.shape` to check the dimensions. The `df.describe()` showed the range for all features are different, for example max value of `X1` is 4.34 but for `X57` its more than 10K. Hence, I have used scaling. There were no null values present and all of the features were numerical, hence no encoding was required. A class imbalance was found using df['Y'].value_counts() method, 
 
 
-<img width="307" alt="class_imbalance" src="https://user-images.githubusercontent.com/40919247/123505679-17e46700-d67e-11eb-896a-7a6985244107.png">
+<img width="150" alt="class_imbalance" src="https://user-images.githubusercontent.com/40919247/123508759-f63fab80-d68e-11eb-8a3a-6e50d9fa21ee.png">
 
 
 There are many methods to tackle class imbalance like collecting more data, duplication of data for which labels are less or deleting data for which labels are more etc. Here. we will using weighting technique wherein we will assign more weights to label 1 and less weights to label 0 while training, using the formula:
